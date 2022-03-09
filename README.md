@@ -18,3 +18,9 @@ This repository is a simple project demonstrating how to split a project into ma
 > mvn install --projects greeting-app # only package and install greeting-app (requires the parent pom and greeting-components in the local .m2 repository)
 ```
 
+## How to deploy remotely ?
+
+```
+> move settings.xml to ~/.m2
+> mvn  -Drepo.id=<repo-id> -Drepo.login=<repo-user> -Drepo.pwd=<repo-user-password> clean deploy
+```
