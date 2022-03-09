@@ -45,4 +45,16 @@
             <url>http://vmpx14.polytech.unice.fr:8002/artifactory/myRepo</url>
         </snapshotRepository>
     </distributionManagement>
+    <profiles>
+        <profile>
+            <id>remote-artefact</id>
+            <repositories>
+                <repository>
+                    <id>snapshots</id>
+                    <name>local-artifactory</name>
+                    <url>http://vmpx14.polytech.unice.fr:8002/artifactory/myRepo</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 </project>

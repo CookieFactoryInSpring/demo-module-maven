@@ -41,24 +41,12 @@
         </dependency>
     </dependencies>
 
-    <profiles>
-        <profile>
-            <id>remote-artefact</id>
-            <repositories>
-                <repository>
-                    <id>snapshots</id>
-                    <name>local-artifactory</name>
-                    <url>http://localhost:8081/artifactory/myrepo</url>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
                 <executions>
                     <execution>
                         <goals>
