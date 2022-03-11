@@ -24,8 +24,8 @@ pipeline {
         stage('Testing unstable') {
             when {
                 anyOf {
-                    changeset "greeting-components/*"
-                    changeset "greeting-app/*"
+                    changeset "greeting-components/**"
+                    changeset "greeting-app/**"
                 }
                 not {
                    anyOf {
