@@ -20,6 +20,7 @@ pipeline {
                     echo "M2_HOME = ${M2_HOME}"
                 '''
                 sh 'whoami'
+                sh 'id -u'
                 sh 'docker --version'
                 sh 'docker ps'
             }
