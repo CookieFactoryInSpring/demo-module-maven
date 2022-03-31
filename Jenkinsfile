@@ -19,8 +19,8 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
-                sh 'docker --version'
                 sh 'docker ps'
+                sh 'docker --version'
             }
         }
         stage('Testing unstable') {
